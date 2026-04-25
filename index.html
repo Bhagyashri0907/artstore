@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ArtStore</title>
+  <link rel="stylesheet" href="styles.css"/>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">🎨 ArtStore</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Discover Beautiful Paintings</h2>
+  <p>Explore exclusive artwork curated for modern collectors.</p>
+</section>
+
+<section class="slider">
+  <div class="bg-blur" id="bg-blur"></div>
+
+  <button id="prev">❮</button>
+
+  <div class="slider-wrapper">
+    <div class="slides" id="slides"></div>
+  </div>
+
+  <button id="next">❯</button>
+</section>
+
+
+<!-- FULLSCREEN MODAL -->
+<div class="modal" id="modal">
+  <span id="closeModal">&times;</span>
+  <img id="modalImg" />
+</div>
+
+
+<footer class="footer">
+  <p>© 2026 ArtStore. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
