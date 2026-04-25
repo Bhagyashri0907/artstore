@@ -1,17 +1,13 @@
 <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
 
-  <!-- REQUIRED hidden inputs -->
   <input type="hidden" name="form-name" value="contact" />
+  <input type="hidden" name="_redirect" value="/contact.html">
 
-  <!-- Hidden spam field -->
   <input type="text" name="bot-field" style="display:none">
 
   <input type="text" name="name" placeholder="Your Name" required>
-
   <input type="email" name="email" placeholder="Your Email" required>
-
   <input type="tel" name="phone" placeholder="Phone Number" required>
-
   <textarea name="message" placeholder="Your Message"></textarea>
 
   <button type="submit">Send Message</button>
