@@ -1,35 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - ArtStore</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
 
-<!-- HEADER -->
-<header class="header">
-  <div class="logo">🎨 ArtStore</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-
-<!-- HERO -->
-<section class="hero">
-  <h2>Contact Us</h2>
-  <p>We’d love to hear from you 💖</p>
-</section>
-
-<!-- CONTACT FORM -->
-<section class="contact">
-  <form name="contact" method="POST" data-netlify="true">
-
-  <!-- REQUIRED hidden input -->
+  <!-- REQUIRED hidden inputs -->
   <input type="hidden" name="form-name" value="contact" />
+
+  <!-- Hidden spam field -->
+  <input type="text" name="bot-field" style="display:none">
 
   <input type="text" name="name" placeholder="Your Name" required>
 
@@ -41,13 +16,4 @@
 
   <button type="submit">Send Message</button>
 
- </form>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <p>© 2026 ArtStore. All rights reserved.</p>
-</footer>
-
-</body>
-</html>
+</form>
