@@ -347,3 +347,58 @@ nav a:hover {
   background: #db2777;
   padding: 12px;
 }
+
+/* CONTACT FORM FIX */
+.contact {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.contact form {
+  background: #ffe4e6;
+  padding: 30px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 15px 40px rgba(236, 72, 153, 0.2);
+
+  display: flex;
+  flex-direction: column; /* 🔥 THIS FIXES ROW ISSUE */
+}
+
+/* INPUTS */
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+}
+
+/* TEXTAREA */
+.contact textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+/* BUTTON */
+.contact button {
+  width: 100%;
+  padding: 12px;
+  background: #ec4899;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+
+  position: static; /* 🔥 VERY IMPORTANT FIX */
+}
+
+.contact button:hover {
+  background: #db2777;
+}
